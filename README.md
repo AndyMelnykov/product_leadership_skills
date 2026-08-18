@@ -11,6 +11,21 @@ This repository is a growing set of practical skills for product leaders who wan
 
 The purpose is not just to collect knowledge, but to create a reusable system for decision-making, collaboration, learning, and leadership over time.
 
+## PM competency model
+
+This repository includes a product management competency model based on Ravi Mehta’s PM competency model. The model is useful because it helps people grow and align expectations across three connected workflows:
+
+- development and coaching
+- performance review and feedback
+- hiring and interview calibration
+
+The core idea is simple: competencies define what good looks like, performance reviews assess evidence of those competencies, and interviews should be designed to evaluate the same capabilities using aligned questions and criteria.
+
+When teams use the same competency language across development, evaluation, and hiring, people get clearer expectations, managers make more consistent decisions, and the organization builds a healthier product culture.
+
+- See the model overview: [docs/pm-competency-model.md](docs/pm-competency-model.md)
+- See the visual: [docs/assets/pm-competency-model.svg](docs/assets/pm-competency-model.svg)
+
 ## What this skills set helps with
 
 ### 1. Build product
@@ -66,6 +81,15 @@ This repository organizes learning across these areas:
 - Team leadership and collaboration
 - AI-assisted product workflows
 - Learning, reflection, and continuous improvement
+- PM competency model application in reviews, growth, and hiring
+
+## Competency support skills
+
+The repo includes a placeholder skills folder for supporting materials that map directly to the competency model:
+
+- [.claude/skills/README.md](.claude/skills/README.md)
+
+These skills are intended to support competency-based coaching, improvement, and evaluation as the set grows over time.
 
 ## How to use this repository
 
