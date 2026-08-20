@@ -1,6 +1,6 @@
 # Skills for the PM Competency Model
 
-This folder holds Claude Code skills that support the competency model used in this repository (see [docs/pm-competency-model.md](../../docs/pm-competency-model.md)).
+This folder holds Claude Code skills that support the competency model used in this repository (see [docs/pm-competency-model.md](../docs/pm-competency-model.md)). Together they form the `product-leadership-skills` Claude Code plugin — see [../INSTALLATION.md](../INSTALLATION.md) to install the whole set at once.
 
 The goal of these skills is to help product leaders and teams:
 
