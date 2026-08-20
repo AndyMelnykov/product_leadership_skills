@@ -17,8 +17,13 @@ Each skill maps to one or more sub-competencies and ends with practice questions
 | Skill | Competency category | Sub-competencies |
 | --- | --- | --- |
 | [synthesize-research](synthesize-research/SKILL.md) | Customer Insight | Voice of the Customer, Fluency with Data |
+| [user-research](user-research/SKILL.md) | Customer Insight | Voice of the Customer, Fluency with Data |
 | [write-feature-spec](write-feature-spec/SKILL.md) | Product Execution | Feature Specification |
 | [stakeholder-alignment-brief](stakeholder-alignment-brief/SKILL.md) | Influencing People | Stakeholder Management |
 | [prep-competency-review](prep-competency-review/SKILL.md) | Cross-cutting | All four categories — organizes review, coaching, and interview prep around the model |
+| [build-dashboard](build-dashboard/SKILL.md) | Product Strategy | Business Outcome Ownership, Strategic Impact |
+| [data-visualization](data-visualization/SKILL.md) | Support skill (not directly invoked) | Backs Fluency with Data and Strategic Impact for any skill that needs a chart |
+
+`user-research` plans and runs a study; `synthesize-research` analyzes the results once it's done — use them together. `build-dashboard` produces a stakeholder-facing artifact; `data-visualization` is the reference it (and other skills) draw on for a single chart.
 
 Add new skills here as the repository grows. When adding one, name it for what it produces, tie it to the specific sub-competency(ies) it exercises, and give it practice questions and an improvement loop so it stays consistent with the skills above.

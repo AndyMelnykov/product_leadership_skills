@@ -85,7 +85,7 @@ This repository organizes learning across these areas:
 
 ## Competency support skills
 
-The repo includes a Claude Code skills folder with skills that map directly to the competency model: `synthesize-research`, `write-feature-spec`, `stakeholder-alignment-brief`, and `prep-competency-review`. Each one ties its output back to a specific sub-competency so it can double as evidence in coaching, review, or hiring conversations.
+The repo includes a Claude Code skills folder with skills that map directly to the competency model: `synthesize-research`, `user-research`, `write-feature-spec`, `stakeholder-alignment-brief`, `prep-competency-review`, `build-dashboard`, and `data-visualization`. Each one ties its output back to a specific sub-competency so it can double as evidence in coaching, review, or hiring conversations.
 
 - [.claude/skills/README.md](.claude/skills/README.md)
 
