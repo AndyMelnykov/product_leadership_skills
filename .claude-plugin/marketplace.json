@@ -1,0 +1,13 @@
+{
+  "name": "product-leadership-skills",
+  "owner": {
+    "name": "Andy Melnykov"
+  },
+  "plugins": [
+    {
+      "name": "product-leadership-skills",
+      "source": ".",
+      "description": "PM competency-model-aligned Claude Code skills: research synthesis, feature specs, stakeholder alignment briefs, review prep, and dashboards."
+    }
+  ]
+}
