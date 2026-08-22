@@ -45,3 +45,7 @@ Interview questions should be aligned to the same criteria used in evaluation so
 ## Improvement loop
 
 Review the quality of decisions, specs, and delivery outcomes after each major milestone. Capture what worked, where clarity was missing, and which habits improved execution over time.
+
+## Deep dives
+
+- [Building a Customer Feedback Management System](Customer_Feedback_System/README.md) — a step-by-step framework for designing, implementing, and scaling a system that turns customer signals into product decisions.
