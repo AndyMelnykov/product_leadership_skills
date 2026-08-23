@@ -16,7 +16,7 @@ Organize evidence, feedback, or interview questions by competency, using the sam
 
 ## Why This Skill Exists
 
-The [PM competency model](../../../docs/pm-competency-model.md) states its central risk plainly: "if hiring interviews evaluate different signals than performance reviews, the organization creates confusion." This skill exists so that a review, a coaching conversation, and an interview loop all draw from the same four categories and twelve sub-competencies, instead of each being reinvented from scratch.
+The [PM competency model](../../docs/pm-competency-model.md) states its central risk plainly: "if hiring interviews evaluate different signals than performance reviews, the organization creates confusion." This skill exists so that a review, a coaching conversation, and an interview loop all draw from the same four categories and twelve sub-competencies, instead of each being reinvented from scratch.
 
 ## 1. Establish the Purpose and Person
 
@@ -24,6 +24,8 @@ Ask, if not already given:
 - Is this for a performance review, a coaching conversation, an interview rubric, or a calibration check?
 - Who is it for — role, level, and how long they've been in the role?
 - What evidence exists already (specs, briefs, syntheses, project outcomes, peer feedback)? Point to the other skills in this folder (`write-feature-spec`, `stakeholder-alignment-brief`, `synthesize-research`) if artifacts from those exist — they are natural evidence sources.
+
+Use the level to set expectations before writing anything: per the model's [level-importance table](../../docs/pm-competency-model.md#how-competency-importance-shifts-by-level), Product Execution differentiates most at APM/PM, Customer Insight and early Product Strategy at Sr. PM/GPM, and Product Strategy plus Influencing People dominate from Director up. Business Outcome Ownership is the one competency that should be weighted heavily at every level. Don't hold a junior PM to Director-level Strategic Impact, or wave away a Director's thin Team Leadership evidence as "not their focus."
 
 ## 2. Organize by the Four Categories
 
@@ -35,6 +37,7 @@ Structure everything around the model's four categories, never inventing new one
 4. **Influencing People** — Stakeholder Management, Team Leadership, Managing Up
 
 For each sub-competency relevant to this review or rubric:
+- **Rating**: a quick Needs Focus / On Track / Outperform call, so trends are comparable across cycles. A healthy profile usually lands 2–3 "Outperform," 2–3 "Needs Focus," and the rest "On Track" — if every competency comes back "On Track," push for a sharper assessment rather than treating that as the goal.
 - **Evidence** (for reviews/coaching): a specific, dated example — not a general impression. "Shipped the onboarding spec with a measurable activation target" beats "good at specs."
 - **Gap or growth area**: where the evidence is thin or inconsistent.
 - **Interview question** (for hiring): a question that would surface the same signal this evidence demonstrates, so the interview bar matches the review bar.
@@ -59,6 +62,7 @@ Per the model's guidance, frame gaps as growth, not judgment:
 
 ## Product Execution
 ### Feature Specification
+- Rating: Needs Focus / On Track / Outperform
 - Evidence: ...
 - Growth area: ...
 - Interview question (if applicable): ...
