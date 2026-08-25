@@ -52,6 +52,12 @@ Per the model's guidance, frame gaps as growth, not judgment:
 - Pair each gap with a concrete next action ("more explicit trade-off framing in stakeholder briefs" not "needs to communicate better")
 - Note what evidence would resolve ambiguity if a competency's evidence is currently too thin to assess confidently
 
+## Constraints
+
+- **Absence of evidence is a gap, not a silent omission.** If a category has no evidence, say so explicitly rather than skipping it or inferring a rating from general reputation.
+- **Never write an interview question that tests something no current review criterion measures, or vice versa**, without flagging the mismatch — hiring and review standards must draw from the same bar.
+- **Impressions are not evidence.** "Strong communicator" does not belong in an Evidence field; only a specific, dated example does.
+
 ## Output Format
 
 ```

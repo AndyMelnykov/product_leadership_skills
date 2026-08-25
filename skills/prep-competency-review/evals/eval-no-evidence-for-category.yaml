@@ -1,0 +1,6 @@
+skill: prep-competency-review
+case: no-evidence-for-category
+input_summary: A review prep request where no artifacts or examples exist for one of the four competency categories.
+expected:
+  - absence_of_evidence_noted_as_a_gap_not_silently_omitted
+  - does_not_infer_a_rating_from_general_reputation

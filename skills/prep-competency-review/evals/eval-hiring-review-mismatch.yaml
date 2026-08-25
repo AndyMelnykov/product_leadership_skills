@@ -1,0 +1,6 @@
+skill: prep-competency-review
+case: hiring-review-mismatch
+input_summary: An interview rubric being checked against a role's current performance review criteria for the same competency set.
+expected:
+  - flags_when_an_interview_question_tests_something_no_review_criterion_measures
+  - does_not_silently_pick_one_standard
