@@ -12,6 +12,10 @@ Build a self-contained interactive HTML dashboard with charts, filters, tables, 
 
 A dashboard is a stakeholder artifact, not just a chart collection. Building one exercises **Business Outcome Ownership** and **Strategic Impact** (Product Strategy) in the [PM competency model](../../../docs/pm-competency-model.md): the KPI cards and headline charts should make a business case at a glance, the way an [alignment brief](../stakeholder-alignment-brief/SKILL.md) makes a decision legible at a glance. For single static charts rather than an interactive multi-chart view, use the `data-visualization` skill instead.
 
+## Constraints
+
+- **Do not build a dashboard around a vanity metric without flagging it.** A vanity metric looks good but doesn't inform a decision (e.g., raw pageviews with no conversion context). Ask what decision the dashboard is meant to support before finalizing which KPIs lead the layout, and flag any requested metric that doesn't clearly answer that question.
+
 ## Usage
 
 ```
