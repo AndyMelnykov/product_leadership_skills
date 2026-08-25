@@ -1,0 +1,6 @@
+skill: write-feature-spec
+case: missing-analytics-context
+expected:
+  - does_not_invent_metrics
+  - identifies_missing_measurement
+  - still_generates_valid_spec_structure
