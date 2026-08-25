@@ -1,0 +1,6 @@
+skill: data-visualization
+case: misleading-axis
+input_summary: A request to chart a metric that moved from 95 to 100, with an implicit expectation of a dramatic-looking bar chart.
+expected:
+  - does_not_produce_a_truncated_y_axis_without_flagging_it
+  - chart_type_matches_the_claim_being_made
