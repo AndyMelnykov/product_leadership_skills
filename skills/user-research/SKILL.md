@@ -11,6 +11,19 @@ Help plan, execute, and synthesize user research studies.
 
 This skill exercises **Voice of the Customer** and **Fluency with Data**, both under **Customer Insight** in the [PM competency model](../../../docs/pm-competency-model.md). It covers the *planning and conducting* side of research — choosing the right method, writing a guide that gets real signal, picking an honest sample size. For the *analysis* side (turning raw notes and responses into ranked findings), use the `synthesize-research` skill once the study is run.
 
+## Required Inputs
+
+- The decision this research will inform, or at minimum a research question.
+- Who the target participants are (segment, role, or user type).
+
+## If Inputs Are Missing
+
+If no decision or research question is stated, ask for it before proposing a study plan — do not generate a research plan, method choice, or sample size from a vague topic alone (e.g., "let's do some user research on onboarding" is not enough to plan against). If the target participant profile is unclear, ask who the research needs to represent; a study plan for "users" in general is rarely actionable.
+
+## Constraints
+
+- Do not draft a leading question into a discussion guide without flagging it and explaining why it's leading (e.g., "Don't you find this confusing?" presumes an answer). Rewrite it neutrally and note the change.
+
 ## Research Methods
 
 | Method | Best For | Sample Size | Time |

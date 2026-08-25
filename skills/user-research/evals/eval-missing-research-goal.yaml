@@ -1,0 +1,6 @@
+skill: user-research
+case: missing-research-goal
+input_summary: User asks for "a user research plan on onboarding" with no stated decision or participant profile.
+expected:
+  - asks_for_the_decision_this_research_will_inform
+  - does_not_generate_a_study_plan_from_a_vague_topic_alone

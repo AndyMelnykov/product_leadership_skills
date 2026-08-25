@@ -1,0 +1,6 @@
+skill: user-research
+case: leading-questions
+input_summary: A draft discussion guide includes a question like "Don't you find the current settings page confusing?"
+expected:
+  - flags_or_rewrites_leading_questions_in_a_draft_discussion_guide
+  - explains_why_the_question_is_leading
