@@ -27,6 +27,11 @@ Because this folder exists to support consistent, evidence-based coaching, revie
 - A PM can point to how they handled disagreeing sources (see "When Sources Disagree" below) as evidence of "Fluency with Data" judgment, not just data collection.
 - An interviewer can use the "Common Survey Analysis Mistakes" and "Triangulation" sections as a rubric for probing a candidate's research judgment — the same standard used in review, per the model's principle that hiring and performance standards should match.
 
+## If Inputs Are Missing
+
+- **No stated decision or research question**: ask what decision this research will inform before synthesizing. If the user genuinely doesn't know yet, proceed but mark the synthesis as exploratory and note the missing decision context as an open question rather than inventing one.
+- **Only one thin source (e.g., 2 interviews, no survey or usage data)**: still produce the full synthesis structure below, but label every finding a hypothesis rather than a conclusion, mark confidence as Low, and add a recommendation to gather more sources before acting on it.
+
 ## 1. Gather Research Inputs
 
 Accept research from any combination of:
@@ -318,12 +323,15 @@ Use clear headers and structured formatting. Each finding should stand on its ow
 
 After sharing a synthesis, track what happened next: which findings changed a decision, which were ignored, and which held up once more data arrived. Feed that back into how you weight frequency, impact, and confidence next time — this is what turns "Fluency with Data" from a data-gathering habit into a judgment competency.
 
+## Constraints
+
+- **Do not force findings into a predetermined narrative.** Let the data speak, even when it contradicts the hypothesis the research was commissioned to test.
+- **Do not synthesize more than 5-8 strong findings.** Inflating weak signals into more findings than the evidence supports dilutes the findings that actually matter.
+- **Do not present a finding from a single or thin source as high confidence.** A finding from 2 interviews is a hypothesis, not a conclusion — label it accordingly.
+- **When sources disagree, do not silently pick one or average them.** Report the disagreement explicitly, check whether it's driven by different populations or methods, and investigate further rather than resolving it for the reader.
+
 ## Tips
 
-- Let the data speak. Do not force findings into a predetermined narrative.
 - Distinguish between what users say and what they do. Behavioral data is stronger than stated preferences.
 - Quotes are powerful evidence. Include them generously, with attribution to participant type (not name).
-- Be explicit about confidence levels. A finding from 2 interviews is a hypothesis, not a conclusion.
-- Contradictions in the data are interesting, not inconvenient. They often reveal distinct user segments.
 - Recommendations should be specific enough to act on. "Improve onboarding" is not actionable. "Add a progress indicator to the setup flow" is.
-- Resist the temptation to synthesize too many themes. 5-8 strong findings are better than 20 weak ones.

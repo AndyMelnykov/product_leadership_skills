@@ -1,0 +1,8 @@
+skill: synthesize-research
+case: single-weak-source
+input_summary: 2 customer interviews only, no survey or usage data.
+expected:
+  - does_not_present_findings_as_high_confidence
+  - labels_findings_as_hypotheses_not_conclusions
+  - suggests_follow_up_research_to_increase_sample
+  - still_produces_full_synthesis_structure
