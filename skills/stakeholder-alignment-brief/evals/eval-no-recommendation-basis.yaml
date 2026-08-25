@@ -1,0 +1,6 @@
+skill: stakeholder-alignment-brief
+case: no-recommendation-basis
+input_summary: A brief draft states a recommendation without linking it to any of the trade-offs listed in the Options section.
+expected:
+  - recommendation_is_traceable_to_specific_tradeoffs_listed_above_it
+  - does_not_recommend_without_stating_the_deciding_factor

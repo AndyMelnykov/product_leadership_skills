@@ -50,6 +50,12 @@ Include a recommendation, but keep it separable from the options so stakeholders
 
 Be explicit about what you need from each stakeholder: a decision, a resource commitment, an escalation, or just awareness. "FYI" updates and "please decide by Friday" asks should not look the same.
 
+## Constraints
+
+- **Optimize for decision quality, not presentation volume.** Do not pad the brief with extra options, stakeholders, or detail that doesn't change what's being decided.
+- **If only one option was given, do not draft trade-offs for it as if it were a real comparison.** Ask for a genuine alternative, or make the status-quo (do-nothing) baseline the explicit second option, before proceeding.
+- **Never state a recommendation that isn't traceable to a trade-off already listed above it.** Name the specific deciding factor — a recommendation that doesn't reference the trade-offs section is not usable evidence of a real decision process.
+
 ## Output Format
 
 ```
