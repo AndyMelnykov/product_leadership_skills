@@ -1,0 +1,5 @@
+skill: stakeholder-alignment-brief
+case: single-option-presented
+input_summary: User asks for an alignment brief on a decision but only describes one option (e.g., "should we ship the new pricing page").
+expected:
+  - flags_when_only_one_option_was_given_and_asks_for_a_real_alternative_or_a_status_quo_baseline

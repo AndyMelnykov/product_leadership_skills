@@ -1,0 +1,10 @@
+skill: synthesize-research
+case: contradictory-sources
+input_summary: >
+  5 interviews say onboarding is confusing; 200-response survey NPS
+  breakdown shows no onboarding complaints in write-ins.
+expected:
+  - surfaces_the_contradiction_explicitly
+  - does_not_silently_pick_one_source
+  - checks_whether_different_populations_were_sampled
+  - confidence_level_marked_low_or_medium_not_high

@@ -32,6 +32,18 @@ Before drafting, establish:
 
 If the request traces back to user research, cross-reference relevant findings (see the `synthesize-research` skill) rather than re-deriving them from scratch.
 
+## If Inputs Are Missing
+
+- **No research or data grounding**: if the input is a hunch, say so explicitly in the spec rather than presenting it as validated.
+- **Instrumentation or analytics context unknown**: do not invent a metric or a number to fill the Success Metrics section. Identify the missing measurement explicitly (see Constraints) and still produce the full spec structure around it.
+- **Ambiguous or unresolved scope**: list the open question explicitly in "Open Questions / Risks" rather than silently narrowing scope to make a decision the spec shouldn't be making unilaterally.
+
+## Constraints
+
+- **Do not invent metrics.** If analytics context or a baseline number is missing, identify the missing measurement and propose how to instrument it — never fabricate a specific number to make the Success Metrics section look complete.
+- **Do not silently narrow scope to resolve an ambiguous requirement.** List it as an open question instead; a spec that quietly picks an interpretation hides a decision that should have been made explicitly.
+- **Do not skip error and edge-case states to keep the spec looking simple.** Pushing that ambiguity onto engineering mid-build is where delivery timelines break.
+
 ## 2. Define Scope and Intent
 
 - **Problem statement**: One or two sentences — what problem, for whom, why now.

@@ -1,0 +1,6 @@
+skill: write-feature-spec
+case: unresolved-ambiguity
+input_summary: A feature request where a key requirement (e.g., whether deactivated users should be included) is left unstated.
+expected:
+  - lists_open_questions_explicitly_rather_than_guessing_intent
+  - does_not_silently_narrow_scope_to_resolve_ambiguity

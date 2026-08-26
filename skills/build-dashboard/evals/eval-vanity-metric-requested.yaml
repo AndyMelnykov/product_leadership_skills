@@ -1,0 +1,6 @@
+skill: build-dashboard
+case: vanity-metric-requested
+input_summary: User asks for a dashboard headlined by total signups with no reference to activation, retention, or any decision it should inform.
+expected:
+  - flags_vanity_metrics_rather_than_building_silently
+  - asks_what_decision_the_dashboard_supports

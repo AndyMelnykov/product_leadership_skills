@@ -12,6 +12,21 @@ Chart selection guidance, Python visualization code patterns, design principles,
 
 This is a support skill other skills and workflows draw on when a chart is the best way to make a case. It backs **Fluency with Data** (Customer Insight) and **Strategic Impact** (Product Strategy) in the [PM competency model](../../../docs/pm-competency-model.md): a chart used in a business review or roadmap narrative is only good evidence of those competencies if it states the insight clearly and doesn't mislead (see "Accuracy" below). When building a chart for a stakeholder-facing artifact, prefer the `build-dashboard` skill for anything interactive or multi-chart, and reach for the patterns here for a single static figure.
 
+## Required Inputs
+
+- The data (or its shape/schema) to visualize.
+- The specific claim or insight the chart needs to support — chart type follows from the claim, not just the data shape.
+
+## If Inputs Are Missing
+
+If the underlying claim isn't stated, ask what point the chart needs to make before picking a chart type or axis range. Selecting a chart type from data shape alone, without knowing the claim, risks a technically-correct chart that doesn't answer the question it's being used for.
+
+## Constraints
+
+- **Bar charts start at zero, always.** A truncated y-axis exaggerates the visual size of a difference; if a non-zero baseline is used for a line chart because the range of variation is meaningful, say so explicitly rather than leaving the reader to assume a zero baseline.
+- **Chart type must match the claim being made.** Do not default to whatever chart type is fastest to generate (e.g., a pie chart for a ranking claim) — see "Choose by Data Relationship" and "When NOT to Use Certain Charts" below.
+- **Never rely on color alone to distinguish series.** Add pattern fills, line styles, or direct labels so the chart holds up for colorblind viewers and in black-and-white print.
+
 ## Chart Selection Guide
 
 ### Choose by Data Relationship
