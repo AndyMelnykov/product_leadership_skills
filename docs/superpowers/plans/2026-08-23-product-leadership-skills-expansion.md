@@ -260,7 +260,7 @@ Apply this identical procedure to each skill below. Steps are shared; parameters
 **Interfaces:**
 - Produces: a single structured file later tooling (or a future `team-skill-gap-analysis` skill, see Block K backlog) can parse instead of scraping prose competency-connection sections out of every SKILL.md.
 
-- [ ] **Step 1:** For every skill that exists after Block C, write one entry in the exact shape shown in the vision doc:
+- [x] **Step 1:** For every skill that exists after Block C, write one entry in the exact shape shown in the vision doc:
   ```yaml
   - skill: synthesize-research
     competencies:
@@ -268,9 +268,9 @@ Apply this identical procedure to each skill below. Steps are shared; parameters
       - customer-insight.fluency-with-data
   ```
   Use `category.sub-competency` slugs derived from the four categories / twelve sub-competencies already named in `docs/pm-competency-model.md` and already used in prose in `skills/README.md`'s table — do not invent new slugs, just slugify the existing names consistently (kebab-case, category prefix).
-- [ ] **Step 2:** Cross-check every entry against the prose "Competency Connection" section in the corresponding SKILL.md — they must agree; if they don't, fix the SKILL.md (it's the source of truth for humans) and this file together.
-- [ ] **Step 3:** Add one line to `skills/README.md`: "Machine-readable version: [skills/competencies.yaml](competencies.yaml)."
-- [ ] **Step 4:** Commit.
+- [x] **Step 2:** Cross-check every entry against the prose "Competency Connection" section in the corresponding SKILL.md — they must agree; if they don't, fix the SKILL.md (it's the source of truth for humans) and this file together.
+- [x] **Step 3:** Add one line to `skills/README.md`: "Machine-readable version: [skills/competencies.yaml](competencies.yaml)."
+- [x] **Step 4:** Commit.
   ```bash
   git add skills/competencies.yaml skills/README.md
   git commit -m "feat(skills): add machine-readable skill-to-competency map"
