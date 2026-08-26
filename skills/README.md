@@ -26,4 +26,6 @@ Each skill maps to one or more sub-competencies and ends with practice questions
 
 `user-research` plans and runs a study; `synthesize-research` analyzes the results once it's done — use them together. `build-dashboard` produces a stakeholder-facing artifact; `data-visualization` is the reference it (and other skills) draw on for a single chart.
 
+Machine-readable version: [skills/competencies.yaml](competencies.yaml).
+
 Add new skills here as the repository grows. When adding one, name it for what it produces, tie it to the specific sub-competency(ies) it exercises, and give it practice questions and an improvement loop so it stays consistent with the skills above.

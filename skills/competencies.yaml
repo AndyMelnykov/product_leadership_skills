@@ -1,0 +1,47 @@
+# Machine-readable skill-to-competency map.
+# Source of truth for humans is each skill's "Competency Connection" section in
+# its SKILL.md; this file must agree with those sections (see docs/pm-competency-model.md
+# for the four categories / twelve sub-competencies these slugs are drawn from).
+
+- skill: synthesize-research
+  competencies:
+    - customer-insight.voice-of-the-customer
+    - customer-insight.fluency-with-data
+
+- skill: user-research
+  competencies:
+    - customer-insight.voice-of-the-customer
+    - customer-insight.fluency-with-data
+
+- skill: write-feature-spec
+  competencies:
+    - product-execution.feature-specification
+
+- skill: stakeholder-alignment-brief
+  competencies:
+    - influencing-people.stakeholder-management
+
+- skill: prep-competency-review
+  competencies:
+    - product-execution.feature-specification
+    - product-execution.product-delivery
+    - product-execution.product-quality
+    - customer-insight.fluency-with-data
+    - customer-insight.voice-of-the-customer
+    - customer-insight.user-experience-design
+    - product-strategy.business-outcome-ownership
+    - product-strategy.product-vision-roadmapping
+    - product-strategy.strategic-impact
+    - influencing-people.stakeholder-management
+    - influencing-people.team-leadership
+    - influencing-people.managing-up
+
+- skill: build-dashboard
+  competencies:
+    - product-strategy.business-outcome-ownership
+    - product-strategy.strategic-impact
+
+- skill: data-visualization
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-strategy.strategic-impact
