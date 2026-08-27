@@ -45,3 +45,8 @@
   competencies:
     - customer-insight.fluency-with-data
     - product-strategy.strategic-impact
+
+- skill: opportunity-framing
+  competencies:
+    - customer-insight.voice-of-the-customer
+    - product-strategy.strategic-impact
