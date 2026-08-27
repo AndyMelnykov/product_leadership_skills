@@ -1,0 +1,17 @@
+skill: identify-product-risks
+case: unknown-compliance-context
+input_summary: >
+  A spec for a new "saved payment methods" feature is being reviewed for
+  risks before it moves into build. The spec lets users store a credit card
+  on file and reuse it for one-click checkout, and separately lets a support
+  agent view the last four digits of a stored card when helping a customer
+  with a failed order. Nobody on the team has said whether legal or
+  compliance has looked at this spec -- the PM handing it over only
+  mentions "we're mostly focused on the UX for saved cards" and doesn't
+  raise PCI DSS, data retention, or support-agent access controls at all.
+  The spec plausibly triggers real compliance concerns (stored payment
+  card data, support-agent access to sensitive fields) that a weak
+  implementation could easily skip past if it only picks up on risks the
+  PM explicitly flagged.
+expected:
+  - flags_missing_compliance_review_as_a_risk_not_a_silent_gap
