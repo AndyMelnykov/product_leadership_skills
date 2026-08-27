@@ -1,0 +1,12 @@
+skill: define-success-metrics
+case: no-instrumentation
+input_summary: >
+  A PM has a write-intent output for a new "saved filters" feature and needs
+  its success metrics defined before spec work continues. The team knows
+  roughly who the feature is for and why, but nobody can say what's
+  currently tracked for the filters UI today -- there's no dashboard, no
+  confirmed event log, and analytics hasn't been asked yet whether the
+  relevant usage events already exist.
+expected:
+  - does_not_invent_a_baseline_number
+  - flags_instrumentation_as_a_launch_blocker_not_an_afterthought

@@ -39,7 +39,13 @@ A skill states the *minimum* context it needs to do its job. Never instruct a sk
      05-product-leadership-skills.md doc was not available when Block A was implemented. The
      Agent-can-do / Human-should-own lists below must be filled in verbatim from that section
      once the vision doc has real content -- do not draft these from scratch, per the repo's
-     sourcing-transparency and "nothing invented" rules for this section. -->
+     sourcing-transparency and "nothing invented" rules for this section.
+     In the meantime, five skills added in Block F (opportunity-framing, problem-validation,
+     write-intent, define-success-metrics, identify-product-risks) had to author their own
+     Review Checkpoints "what a human must approve" language against this placeholder --
+     re-audit those five against the real Agent-can-do / Human-should-own lists once this
+     section is filled in, rather than assuming they were already reconciled (see plan Task 33
+     quality-bar self-audit). -->
 
 **Agent can do:**
 

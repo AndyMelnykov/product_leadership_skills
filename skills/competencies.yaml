@@ -45,3 +45,28 @@
   competencies:
     - customer-insight.fluency-with-data
     - product-strategy.strategic-impact
+
+- skill: opportunity-framing
+  competencies:
+    - customer-insight.voice-of-the-customer
+    - product-strategy.strategic-impact
+
+- skill: problem-validation
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-strategy.business-outcome-ownership
+
+- skill: write-intent
+  competencies:
+    - product-strategy.product-vision-roadmapping
+    - product-execution.feature-specification
+
+- skill: define-success-metrics
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-strategy.business-outcome-ownership
+
+- skill: identify-product-risks
+  competencies:
+    - product-execution.product-quality
+    - product-strategy.strategic-impact
