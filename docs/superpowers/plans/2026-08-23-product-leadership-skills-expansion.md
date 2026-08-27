@@ -285,13 +285,13 @@ Apply this identical procedure to each skill below. Steps are shared; parameters
 **Files:**
 - Modify: `skills/CONTRIBUTING.md` (append this section — it belongs with the other authoring guidance from Task 2)
 
-- [ ] **Step 1:** Add a `## Sourcing a new skill` section to `skills/CONTRIBUTING.md` with this exact procedure, so Blocks F-J can reference it by name instead of repeating it:
+- [x] **Step 1:** Add a `## Sourcing a new skill` section to `skills/CONTRIBUTING.md` with this exact procedure, so Blocks F-J can reference it by name instead of repeating it:
   1. **Search first.** For the skill's stated purpose, search: (a) Anthropic's official Claude skill examples (anthropic-cookbook / anthropic-quickstarts / any published Claude "Agent Skills" example repos), (b) community lists such as "awesome-claude-skills" / "awesome-claude-code" on GitHub, (c) general GitHub/web search for `"<skill purpose>" claude skill` or `"<skill purpose>" prompt template product management`. Use WebSearch/WebFetch for this — do not rely on memory of what might exist.
   2. **Evaluate candidates against this repo's bar**, not against how polished they look: does the candidate specify inputs, missing-input behavior, constraints, and output structure? Does it avoid turning weak evidence into strong claims? Most generic prompt-library hits will fail this bar — that's expected and is itself useful signal that hand-authoring is warranted.
   3. **If a usable candidate exists:** adapt it — rewrite to this repo's SKILL.md contract and frontmatter shape, add the competency connection, add constraints/missing-input-behavior if the source lacked them, and record `<!-- sourcing: adapted-from-<url> -->` at the top of the file.
   4. **If nothing suitable is found:** draft from scratch using `skills/_TEMPLATE/SKILL.md`, using `synthesize-research` or `prep-competency-review` as style references (they are the most complete existing skills), and record `<!-- sourcing: drafted-fresh -->`.
   5. **Either way:** the skill still needs its own `evals/` (at least 1 case, 2+ preferred) before the task is done — sourcing an example does not exempt a skill from evaluation.
-- [ ] **Step 2:** Commit.
+- [x] **Step 2:** Commit.
   ```bash
   git add skills/CONTRIBUTING.md
   git commit -m "docs: document the search-first procedure for new skills"
