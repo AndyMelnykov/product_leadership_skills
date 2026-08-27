@@ -1,0 +1,11 @@
+skill: problem-validation
+case: no-existing-evidence
+input_summary: >
+  A PM wants to validate the problem statement "enterprise admins struggle
+  to audit which teammates have access to sensitive projects" before
+  committing next quarter's roadmap slot to it. No interviews, no support
+  tickets, no usage data, and no survey have been gathered -- the problem
+  came from a single stakeholder's hallway comment.
+expected:
+  - produces_a_plan_not_a_verdict
+  - go_no_go_criteria_defined_before_any_data_is_referenced

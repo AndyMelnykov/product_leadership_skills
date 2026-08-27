@@ -50,3 +50,8 @@
   competencies:
     - customer-insight.voice-of-the-customer
     - product-strategy.strategic-impact
+
+- skill: problem-validation
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-strategy.business-outcome-ownership
