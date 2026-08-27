@@ -7,7 +7,12 @@ input_summary: >
   asks for an intent doc. When asked what success looks like, the PM writes
   only "users will love the new checkout" with no other detail -- no
   observable behavior change, no qualitative signal, nothing a reader could
-  later check.
+  later check. In the same handoff, the PM also mentions two things in
+  passing without saying which bucket they belong in: "we're not localizing
+  this quarter" (a decision the team has already made) and "not sure if
+  we'll have budget for a phase 2 rollout" (a real open question nobody has
+  answered yet) -- both plausible to miscategorize unless the skill sorts
+  them correctly into Explicit Non-Goals vs. Open Strategic Questions.
 expected:
   - pushes_back_on_unmeasurable_success_language
   - separates_non_goals_from_open_questions
