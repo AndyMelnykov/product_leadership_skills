@@ -81,7 +81,10 @@ Two shapes, depending on the Process step 4 branch. Both start identically.
   sources, at least one workaround (spending or built solution)
 - Investigate more: Validation Score 100-249, or fewer than 5 sources, or no
   workaround evidence yet
-- Kill: Validation Score <100, or no one has tried to solve this themselves
+- Kill: Validation Score <100 (a Validation Score >=100 with no workaround
+  evidence routes to "Investigate more" above, never straight to Kill --
+  per the Constraints' cap rule, absent workaround evidence can only hold a
+  problem at "Investigate More," not drop it to "Kill")
 
 ## Current Evidence Strength
 None / Thin -- [state exactly what exists and why it doesn't clear the bar,
