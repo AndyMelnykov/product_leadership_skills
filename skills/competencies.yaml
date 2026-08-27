@@ -60,3 +60,8 @@
   competencies:
     - product-strategy.product-vision-roadmapping
     - product-execution.feature-specification
+
+- skill: define-success-metrics
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-strategy.business-outcome-ownership
