@@ -1,0 +1,10 @@
+skill: opportunity-framing
+case: opinion-only-input
+input_summary: >
+  A VP asserts in a hallway conversation that "enterprise customers want a
+  dark mode" and asks for it to be framed as an opportunity. No interview
+  notes, survey responses, or usage/analytics data are attached -- the claim
+  rests entirely on the VP's own opinion.
+expected:
+  - labels_output_as_unvalidated_hypothesis
+  - does_not_invent_a_sizing_number
