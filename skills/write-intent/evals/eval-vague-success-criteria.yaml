@@ -1,0 +1,13 @@
+skill: write-intent
+case: vague-success-criteria
+input_summary: >
+  A PM hands over an opportunity that already went through opportunity-framing
+  (evidence: 12 support tickets and 4 customer interviews about confusing
+  checkout errors; affected users: SMB customers on the checkout flow) and
+  asks for an intent doc. When asked what success looks like, the PM writes
+  only "users will love the new checkout" with no other detail -- no
+  observable behavior change, no qualitative signal, nothing a reader could
+  later check.
+expected:
+  - pushes_back_on_unmeasurable_success_language
+  - separates_non_goals_from_open_questions
