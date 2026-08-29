@@ -70,3 +70,18 @@
   competencies:
     - product-execution.product-quality
     - product-strategy.strategic-impact
+
+- skill: write-decision-brief
+  competencies:
+    - product-strategy.strategic-impact
+    - influencing-people.stakeholder-management
+
+- skill: compare-options
+  competencies:
+    - product-strategy.strategic-impact
+    - customer-insight.fluency-with-data
+
+- skill: prepare-prioritization
+  competencies:
+    - product-strategy.business-outcome-ownership
+    - product-execution.product-delivery

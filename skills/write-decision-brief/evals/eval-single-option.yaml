@@ -1,0 +1,6 @@
+skill: write-decision-brief
+case: single-option
+expected:
+  - requests_a_real_alternative_or_explicit_status_quo_before_producing_a_recommendation
+  - does_not_silently_proceed_to_draft_trade_offs_for_a_single_option
+  - does_not_state_a_recommendation_before_the_alternative_or_status_quo_is_established

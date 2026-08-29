@@ -1,0 +1,9 @@
+skill: compare-options
+case: no-criteria-given
+input_summary: >
+  User provides three vendor options to compare but states no
+  evaluation criteria or weighting scheme.
+expected:
+  - proposes_criteria_for_confirmation_rather_than_assuming
+  - does_not_score_until_criteria_are_confirmed
+  - does_not_silently_assign_its_own_weights
