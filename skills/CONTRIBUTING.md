@@ -45,7 +45,8 @@ A skill states the *minimum* context it needs to do its job. Never instruct a sk
      Review Checkpoints "what a human must approve" language against this placeholder --
      re-audit those five against the real Agent-can-do / Human-should-own lists once this
      section is filled in, rather than assuming they were already reconciled (see plan Task 33
-     quality-bar self-audit). -->
+     quality-bar self-audit). write-decision-brief (Block G) hit the same placeholder and is
+     flagged for the same re-audit. -->
 
 **Agent can do:**
 
