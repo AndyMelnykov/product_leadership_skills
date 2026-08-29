@@ -1,0 +1,9 @@
+skill: prepare-prioritization
+case: missing-effort-estimate
+input_summary: >
+  A backlog of 6 candidate items is provided with impact estimates
+  for all 6, but effort estimates for only 4 of them.
+expected:
+  - marks_item_as_insufficient_data_rather_than_guessing
+  - does_not_present_the_ranking_as_the_decision_itself
+  - routes_strategic_bet_or_compliance_items_to_qualitative_flags_not_the_score_table

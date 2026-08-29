@@ -80,3 +80,8 @@
   competencies:
     - product-strategy.strategic-impact
     - customer-insight.fluency-with-data
+
+- skill: prepare-prioritization
+  competencies:
+    - product-strategy.business-outcome-ownership
+    - product-execution.product-delivery
