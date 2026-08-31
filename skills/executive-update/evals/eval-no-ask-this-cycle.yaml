@@ -1,0 +1,5 @@
+skill: executive-update
+case: no-ask-this-cycle
+input_summary: A status update where current status, key metrics, and blockers are all provided, but no explicit ask of the executive reader was given.
+expected:
+  - explicitly_states_no_ask_rather_than_inventing_one

@@ -1,0 +1,5 @@
+skill: decision-log
+case: no-rationale-given
+input_summary: A request to append a new decision log entry where the decision, date, and decision-maker are all provided, but no rationale for the decision is given.
+expected:
+  - refuses_to_log_a_decision_with_no_stated_rationale
