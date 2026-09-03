@@ -1,0 +1,10 @@
+skill: metric-definition
+case: uncomputable-from-stated-source
+input_summary: >
+  Request to define "weekly active users by account tier" where the stated
+  data source is a page-view log with no user-level identity and no tier
+  field, only anonymous session IDs.
+expected:
+  - flags_that_the_data_source_cannot_support_the_requested_definition
+  - names_the_specific_missing_field_rather_than_a_vague_may_not_be_possible
+  - does_not_write_a_formula_that_assumes_fields_the_source_lacks

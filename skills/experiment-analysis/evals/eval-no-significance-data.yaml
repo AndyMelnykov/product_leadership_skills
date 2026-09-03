@@ -1,0 +1,10 @@
+skill: experiment-analysis
+case: no-significance-data
+input_summary: >
+  Experiment result with sample sizes, a +6% observed effect on conversion,
+  and run duration provided, but no p-value, confidence interval, or other
+  significance test result included.
+expected:
+  - refuses_to_declare_a_winner_without_significance_data
+  - still_describes_the_observed_difference
+  - explicitly_labels_the_result_as_not_yet_statistically_validated

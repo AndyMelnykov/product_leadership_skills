@@ -1,0 +1,10 @@
+skill: experiment-analysis
+case: significant-but-trivial-effect
+input_summary: >
+  Large-sample experiment (500k users per variant) reaching p < 0.01 on a
+  +0.2% conversion lift -- statistically significant but a very small
+  absolute effect relative to typical shipping cost.
+expected:
+  - does_not_equate_statistical_significance_with_a_ship_recommendation
+  - explicitly_assesses_whether_the_effect_size_is_practically_meaningful
+  - recommendation_is_traceable_to_the_practical_significance_judgment

@@ -85,3 +85,12 @@
   competencies:
     - product-strategy.business-outcome-ownership
     - product-execution.product-delivery
+
+- skill: metric-definition
+  competencies:
+    - customer-insight.fluency-with-data
+
+- skill: experiment-analysis
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-strategy.business-outcome-ownership

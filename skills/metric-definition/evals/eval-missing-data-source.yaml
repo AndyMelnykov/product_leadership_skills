@@ -1,0 +1,9 @@
+skill: metric-definition
+case: missing-data-source
+input_summary: >
+  Request to define "activation rate" with a clear intent (share of new
+  signups completing the core action within 7 days) but no data source
+  named at all.
+expected:
+  - asks_which_system_the_data_would_come_from_before_writing_a_formula
+  - does_not_invent_a_plausible_sounding_data_source
