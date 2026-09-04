@@ -1,0 +1,10 @@
+skill: eval-plan
+case: no-known-failure-modes
+input_summary: >
+  A feature description with clearly stated expected behaviors (an AI drafting
+  assistant that should always cite its source document and never fabricate a
+  quote) but no known failure modes yet -- the requester has not observed the
+  feature fail and has no incident history or suspected edge case to report.
+expected:
+  - still_produces_cases_for_stated_behaviors
+  - explicitly_lists_failure_modes_as_open_rather_than_skipping_the_section

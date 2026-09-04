@@ -48,7 +48,9 @@ A skill states the *minimum* context it needs to do its job. Never instruct a sk
      quality-bar self-audit). write-decision-brief (Block G) hit the same placeholder and is
      flagged for the same re-audit. compare-options (Block G) hit the same placeholder and
      is flagged for the same re-audit. prepare-prioritization (Block G) hit the same
-     placeholder and is flagged for the same re-audit. -->
+     placeholder and is flagged for the same re-audit. Block J's five skills (context-audit,
+     agent-readiness-review, ai-feature-risk-review, eval-plan, human-in-the-loop-design) hit
+     the same placeholder and are flagged for the same re-audit. -->
 
 **Agent can do:**
 

@@ -1,0 +1,10 @@
+skill: eval-plan
+case: vague-expected-behavior-stated
+input_summary: >
+  A feature description whose only stated expected behavior is a vague quality
+  goal ("the AI summarizer should give good, accurate summaries") with no
+  specific, checkable claim underneath it, and no known failure modes.
+expected:
+  - asks_for_the_specific_checkable_behavior_before_producing_cases
+  - does_not_fabricate_a_specific_behavior_that_was_never_stated
+  - does_not_produce_an_eval_case_whose_expected_entry_is_itself_a_vague_quality_adjective

@@ -1,0 +1,11 @@
+skill: context-audit
+case: two-conflicting-docs
+input_summary: >
+  Two docs handed in for the same topic (the "trial conversion rate" definition):
+  a 14-month-old onboarding spec defines it as "signups who complete setup within
+  7 days," while a 2-month-old growth-team metrics doc defines it as "signups who
+  reach an active paid plan within 30 days." Neither doc is marked as the source
+  of truth, and no decision log entry designates one as authoritative.
+expected:
+  - cites_both_conflicting_sources_explicitly
+  - does_not_silently_prefer_the_more_recent_one_without_saying_so
