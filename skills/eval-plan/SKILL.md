@@ -1,6 +1,6 @@
 ---
 name: eval-plan
-description: Turn an AI feature's expected behavior into a set of measurable eval test cases in the skill/case/expected YAML shape, plus the coverage gaps and cadence needed to actually run them. Use when defining how an AI feature's quality will be measured before or after launch, when a feature spec describes what an AI feature should do but has no eval cases yet, or when reviewing an existing eval suite for what it doesn't cover.
+description: Turn an AI feature's expected behavior into a set of measurable eval test cases in the skill/case/expected YAML shape, plus the coverage gaps and cadence needed to actually run them. Use when defining how an AI feature's quality will be measured before or after launch, or when a feature spec describes what an AI feature should do but has no eval cases yet.
 argument-hint: "<the AI feature's expected behaviors, plus any known failure modes>"
 ---
 
@@ -104,7 +104,7 @@ expected:
 - **Ongoing regression:** [case(s) that should re-run on every relevant change; what change would be expected to break them]
 ```
 
-The `## Eval Cases` section's YAML blocks must be copy-pasteable directly into an `evals/*.yaml` file in this shape -- one file per case, `skill`/`case`/optional `input_summary`/`expected`.
+The `## Eval Cases` section's YAML blocks must be copy-pasteable directly into an `evals/*.yaml` file in this shape -- one file per case, `skill`/`case`/optional `input_summary`/`expected`. If a case's grading approach (from Process step 5) isn't obvious from its `expected` strings alone -- e.g. it needs a human or model judgment call rather than a deterministic check -- note that in one short prose line immediately below that case's YAML block, never inside the block itself, so the block stays plain, copy-pasteable YAML.
 
 ## Review Checkpoints
 
