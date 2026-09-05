@@ -51,7 +51,7 @@ One skill end to end — `write-feature-spec`, turning an ambiguous request into
       User Flow / Success Metrics / Open Questions & Risks / Rollout Plan.
 ```
 
-`user-research` plans and runs a study; `synthesize-research` analyzes the results once it's done — most skills are meant to chain this way rather than run in isolation, though there is no automated demo chain yet (see Limitations).
+`user-research` plans and runs a study; `synthesize-research` analyzes the results once it's done — most skills are meant to chain this way rather than run in isolation — see [examples/demo-chain/README.md](examples/demo-chain/README.md) for one worked end to end.
 
 ## AI design decisions
 
@@ -134,7 +134,7 @@ Strategy_thinking_storytelling/   competency deep-dive: strategy & storytelling
 
 - **Vision doc is a placeholder skeleton.** `docs/vision/product-leadership-skills-vision.md` has several sections marked TODO (positioning statement, human judgment boundaries, decision-brief template) pending a source document that wasn't available when it was drafted. These are deliberately left blank rather than filled in with invented content — see `skills/CONTRIBUTING.md`.
 - **Wave 1 skill expansion is 2 of 17 done.** `executive-update` and `decision-log` have shipped; opportunity framing, decision support (write-decision-brief, compare-options, prepare-prioritization), analytics (metric-definition, experiment-analysis), and the entire "AI-native product workflows" group (context-audit, agent-readiness-review, AI-feature-risk-review, eval-plan, human-in-the-loop-design) are scoped but not built. Full backlog: [docs/skills-gap-audit.md](docs/skills-gap-audit.md), tracked plan: `docs/superpowers/plans/2026-08-23-product-leadership-skills-expansion.md`.
-- **No worked demo chain yet.** Skills are documented as chaining into each other (e.g. `user-research` -> `synthesize-research`), but there's no example showing one skill's real output feeding the next end to end.
+- **Worked demo chain covers one path only.** [examples/demo-chain/](examples/demo-chain/README.md) shows one skill's real output feeding the next end to end (transcripts through an alignment brief), but only for that single chain — most other skill-to-skill handoffs are still documented, not demonstrated.
 - **Eval cases aren't automated.** They're a reviewable specification of expected behavior (`skill / case / expected`), not a CI-gated test suite run against a live model.
 - **Golden examples exist for 2 of 9 skills.** The rest rely on evals and the SKILL.md's own guidance alone.
 - **No versioned changelog yet.** `.claude-plugin/plugin.json` is at `1.0.0`; a `CHANGELOG.md` and version bump are planned once the Wave 1 expansion lands (see Roadmap), not before, so it reflects a real milestone rather than incremental noise.
