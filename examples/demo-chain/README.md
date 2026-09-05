@@ -11,7 +11,7 @@ The scenario: Relay (a fictional support-ticketing product) may be losing custom
 | [`01-transcripts.md`](01-transcripts.md) | (fictional raw input) | 4 customer interview transcripts across 3 accounts, on one coherent problem: context loss during agent shift handoffs. |
 | [`02-research-synthesis.md`](02-research-synthesis.md) | [`synthesize-research`](../../skills/synthesize-research/SKILL.md) | Extracts 5 findings from the transcripts, each rated for confidence, explicitly reporting — not resolving — where two participants disagree on the right fix. |
 | [`03-opportunity-framing.md`](03-opportunity-framing.md) | [`opportunity-framing`](../../skills/opportunity-framing/SKILL.md) | Frames the opportunity, states plainly that sizing is unknown, and rates overall confidence Low because every underlying finding was rated Low — it does not average or round up to make the opportunity look stronger. |
-| [`04-intent.md`](04-intent.md) | [`write-intent`](../../skills/write-intent/SKILL.md) | Turns the opportunity into an approvable intent, rewrites a stakeholder's vague "make it feel less chaotic" into an observable success statement, and carries the Low-confidence caveat forward instead of smoothing it over. |
+| [`04-intent.md`](04-intent.md) | [`write-intent`](../../skills/write-intent/SKILL.md) | Turns the opportunity into an approvable intent, states Success Looks Like in the same observable terms the opportunity statement already uses (no vague stakeholder quote needed rewriting here), and carries the Low-confidence caveat forward instead of smoothing it over. |
 | [`05-feature-spec.md`](05-feature-spec.md) | [`write-feature-spec`](../../skills/write-feature-spec/SKILL.md) | Turns the intent into a spec with a named Problem, Goals/Non-Goals, User Flow (including edge cases), and Success Metrics that name the missing instrumentation instead of inventing a target number. |
 | [`06-alignment-brief.md`](06-alignment-brief.md) | [`stakeholder-alignment-brief`](../../skills/stakeholder-alignment-brief/SKILL.md) | Originates a cross-functional build-direction decision implied by the spec's own Open Questions/Risks and Rollout Plan, with three real options and a recommendation traceable to their trade-offs. |
 
@@ -28,4 +28,4 @@ Files 2 through 5 each mechanically apply their skill's process to the previous 
 
 ## Reading order
 
-Read the files in numeric order — each one names the specific line of the previous file it's building on, so the chain can be followed end to end without cross-referencing anything outside this folder.
+Read the files in numeric order — each one cites specific findings or quotes from the file before it, so the chain can be followed end to end without cross-referencing anything outside this folder.
