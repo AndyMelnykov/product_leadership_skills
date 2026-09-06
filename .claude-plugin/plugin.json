@@ -2,7 +2,7 @@
   "name": "product-leadership-skills",
   "displayName": "Product Leadership Skills",
   "description": "Claude Code skills for product leaders, mapped to Ravi Mehta's PM competency model: research synthesis, feature specs, stakeholder alignment briefs, competency-based review prep, and dashboard/data-viz support.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Andy Melnykov"
   },

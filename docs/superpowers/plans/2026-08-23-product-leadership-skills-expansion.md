@@ -542,15 +542,17 @@ These directly implement the vision doc's "Suggested high-value new skills" sect
 - Modify: `README.md`
 - Modify: `skills/README.md`
 
-- [ ] **Step 1:** In `skills/README.md`, replace the existing table with one row per skill that exists after Blocks C+F-J (22 skills total: 7 retrofitted + 15 new), columns: `Skill | Use case | Competency`. This single step replaces the "add a row per new-skill task" note deferred from Block E.
-- [ ] **Step 2:** In root `README.md`, add the vision doc's exact positioning statement as a new lead line under the title: "A reusable library of AI agent skills for product discovery, decision-making, execution, leadership, and product operations," reconciled with the existing "Repository goal" section (don't duplicate — the existing goal section is good and should stay; add the positioning line as a sharper one-sentence summary above it).
-- [ ] **Step 3:** Add a "What makes it different" subsection listing exactly the five points from the vision doc's README-structure guidance: skills not prompts, evidence-based, human review points, competency mapping, evaluation.
-- [ ] **Step 4:** Link `examples/demo-chain/README.md` from the README's usage section as "See a full worked example."
-- [ ] **Step 5:** Commit.
+- [x] **Step 1:** In `skills/README.md`, replace the existing table with one row per skill that exists after Blocks C+F-J (**ruling:** the repo actually has 24 skills — 7 retrofitted + 17 new, not the 22/15 stated here; Tasks 12-28 name 17 new-skill tasks, and 24 matches the actual `skills/*/SKILL.md` count — this stale count is a plan-text error, not a scope change), columns: `Skill | Use case | Competency`. This single step replaces the "add a row per new-skill task" note deferred from Block E.
+- [x] **Step 2:** In root `README.md`, add the vision doc's exact positioning statement as a new lead line under the title: "A reusable library of AI agent skills for product discovery, decision-making, execution, leadership, and product operations," reconciled with the existing "Repository goal" section (**ruling:** root README has no heading literally titled "Repository goal" — the paragraph directly under the title serves that role; the positioning line was added above it, not as a new heading, per the instruction's intent).
+- [x] **Step 3:** Add a "What makes it different" subsection listing exactly the five points from the vision doc's README-structure guidance: skills not prompts, evidence-based, human review points, competency mapping, evaluation.
+- [x] **Step 4:** Link `examples/demo-chain/README.md` from the README's usage section as "See a full worked example."
+- [x] **Step 5:** Commit.
   ```bash
   git add README.md skills/README.md
   git commit -m "docs: refresh positioning, catalog table, and demo link in READMEs"
   ```
+
+  Also fixed along the way: `skills/competencies.yaml` was missing 7 skills (`executive-update`, `decision-log`, and the 5 AI-native-workflow skills) added after Task 10 ran — backfilled in the same commit so it agrees with each skill's Competency Connection section again. Also corrected several now-stale "9 skills" / "2 of 9" / "Wave 1 X of 17 done" references elsewhere in root `README.md` so the refreshed positioning wouldn't contradict the rest of the same file.
 
 ### Task 32: Add versioning and changelog
 
@@ -558,13 +560,15 @@ These directly implement the vision doc's "Suggested high-value new skills" sect
 - Create: `CHANGELOG.md`
 - Modify: `.claude-plugin/plugin.json` (bump version)
 
-- [ ] **Step 1:** Read the current `.claude-plugin/plugin.json` version field and decide the bump (this expansion adds 15 skills and restructures 7 — a minor version bump, not a patch).
-- [ ] **Step 2:** Create `CHANGELOG.md` with one entry for this expansion: what changed (contract standardization, evals added, 15 new skills across Discovery/Definition/Prioritization/Stakeholder/Analytics/AI-native groups, competency map, demo chain), why (close the gap identified in `docs/skills-gap-audit.md` against the vision doc), expected behavior impact (existing 7 skills behave the same for users — this is additive plus stricter internal contract, not a breaking change).
-- [ ] **Step 3:** Commit.
+- [x] **Step 1:** Read the current `.claude-plugin/plugin.json` version field and decide the bump (this expansion adds 15 skills and restructures 7 — a minor version bump, not a patch). Bumped `1.0.0` → `1.1.0`.
+- [x] **Step 2:** Create `CHANGELOG.md` with one entry for this expansion: what changed (contract standardization, evals added, 17 new skills across Discovery/Definition/Prioritization/Stakeholder/Analytics/AI-native groups, competency map, demo chain), why (close the gap identified in `docs/skills-gap-audit.md` against the vision doc), expected behavior impact (existing 7 skills behave the same for users — this is additive plus stricter internal contract, not a breaking change).
+- [x] **Step 3:** Commit.
   ```bash
   git add CHANGELOG.md .claude-plugin/plugin.json
   git commit -m "chore: bump plugin version and add changelog for skills expansion"
   ```
+
+  Also removed root README's now-resolved "no changelog yet" limitation and roadmap item in the same commit.
 
 ---
 
