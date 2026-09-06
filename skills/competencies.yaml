@@ -94,3 +94,38 @@
   competencies:
     - customer-insight.fluency-with-data
     - product-strategy.business-outcome-ownership
+
+- skill: executive-update
+  competencies:
+    - influencing-people.managing-up
+    - product-strategy.business-outcome-ownership
+
+- skill: decision-log
+  competencies:
+    - influencing-people.stakeholder-management
+    - product-strategy.strategic-impact
+
+- skill: context-audit
+  competencies:
+    - customer-insight.fluency-with-data
+    - product-execution.product-quality
+
+- skill: agent-readiness-review
+  competencies:
+    - product-strategy.strategic-impact
+    - product-execution.product-quality
+
+- skill: ai-feature-risk-review
+  competencies:
+    - product-execution.product-quality
+    - product-strategy.strategic-impact
+
+- skill: eval-plan
+  competencies:
+    - product-execution.product-quality
+    - customer-insight.fluency-with-data
+
+- skill: human-in-the-loop-design
+  competencies:
+    - product-strategy.strategic-impact
+    - product-execution.product-quality

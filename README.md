@@ -1,6 +1,16 @@
 # Product Leadership Skills
 
+A reusable library of AI agent skills for product discovery, decision-making, execution, leadership, and product operations.
+
 A library of Claude Code skills and reference frameworks for product leaders — turning repeatable product-management workflows into instructions an agent can execute and a human can review, evidenced against a shared competency model instead of a pile of one-off prompts.
+
+## What makes it different
+
+- **Skills, not prompts.** Every skill is a full contract (Purpose, Trigger, Inputs, Missing-input behavior, Process, Constraints, Output, Review, Evaluation) — not a one-off prompt template.
+- **Evidence-based.** Skills must not convert weak or absent evidence directly into a confident recommendation; each states an explicit "when evidence is thin, do X" rule instead.
+- **Human review points.** Every skill names what a human must approve before its output is used — no skill calls an API, writes to a system, or takes an action on its own.
+- **Competency mapping.** Every skill traces to a sub-competency in the [PM competency model](docs/pm-competency-model.md), in prose and in [skills/competencies.yaml](skills/competencies.yaml), so output doubles as review/coaching/hiring evidence.
+- **Evaluation.** Every skill ships at least one YAML eval case (`skill/case/expected`) testing a specific, known failure mode.
 
 ## Problem
 
@@ -15,8 +25,10 @@ This repository is for a product leader (or a team) who wants Claude Code to hel
 
 The repository is two things working together:
 
-1. **`skills/`** — an installable Claude Code plugin: 9 skills, each a `SKILL.md` that Claude Code runs directly (`/write-feature-spec`, `/synthesize-research`, etc.). No custom agent code — see [docs/decisions/001](docs/decisions/001-markdown-skills-not-custom-agent-code.md).
+1. **`skills/`** — an installable Claude Code plugin: 24 skills, each a `SKILL.md` that Claude Code runs directly (`/write-feature-spec`, `/synthesize-research`, etc.). No custom agent code — see [docs/decisions/001](docs/decisions/001-markdown-skills-not-custom-agent-code.md).
 2. **A PM competency model** (based on Ravi Mehta's model) that every skill traces back to, so skill output can double as evidence in development coaching, performance review, and hiring/interview calibration — the same competency language used across all three.
+
+A representative sample (full catalog: [skills/README.md](skills/README.md)):
 
 | Skill | Competency category | Sub-competencies |
 | --- | --- | --- |
@@ -61,7 +73,7 @@ One skill end to end — `write-feature-spec`, turning an ambiguous request into
 | Quality mechanism | Evals as YAML case files (`skill / case / expected`), one per known failure mode | Makes "does this skill behave correctly" reproducible and inspectable, not a demo claim — see [ADR 003](docs/decisions/003-eval-driven-quality-via-yaml-cases.md) |
 | Context resolution | Fixed source hierarchy: approved decision > canonical docs > current customer evidence > meeting notes > working drafts > agent inference | Several skills draw on conflicting inputs; a fixed order makes conflict resolution deterministic — see [ADR 002](docs/decisions/002-competency-model-alignment-and-source-hierarchy.md) |
 | Competency grounding | Every skill maps to a PM competency sub-competency, in prose and in `competencies.yaml` | Keeps output usable as review/coaching/hiring evidence, not just a finished task — see [ADR 002](docs/decisions/002-competency-model-alignment-and-source-hierarchy.md) |
-| Golden examples | Shipped for 2 of 9 skills (the flagship ones), added only once real content exists | An aspirational or empty `examples/` folder is worse than none — per `skills/CONTRIBUTING.md` |
+| Golden examples | Shipped for 2 of 24 skills (the flagship ones), added only once real content exists | An aspirational or empty `examples/` folder is worse than none — per `skills/CONTRIBUTING.md` |
 
 ## Human-agent boundary
 
@@ -87,8 +99,8 @@ Skills never call an external API, write to a system, or execute an action — t
 
 ## Evaluation
 
-- **Eval coverage:** 9 of 9 shipped skills have at least one YAML eval case in `skills/<name>/evals/`, each testing a specific failure mode (fabricated evidence, silently-resolved ambiguity, skipped-but-unflagged missing evidence).
-- **Golden examples:** 2 of 9 skills (`synthesize-research`, `write-feature-spec`) ship a strong/weak example pair in `skills/<name>/examples/`.
+- **Eval coverage:** 24 of 24 shipped skills have at least one YAML eval case in `skills/<name>/evals/`, each testing a specific failure mode (fabricated evidence, silently-resolved ambiguity, skipped-but-unflagged missing evidence).
+- **Golden examples:** 2 of 24 skills (`synthesize-research`, `write-feature-spec`) ship a strong/weak example pair in `skills/<name>/examples/`.
 - **Contract coverage:** a full per-skill table (Purpose / Trigger / Inputs / Missing-input behavior / Process / Constraints / Output / Review / Evaluation) is tracked in [docs/skills-gap-audit.md](docs/skills-gap-audit.md) — that snapshot is dated 2026-08-24; eval coverage has reached 9/9 since, the rest of the table still reflects that date.
 - There is no automated runner executing eval cases against a live model yet — see Limitations.
 
@@ -103,7 +115,7 @@ There's no runtime to trace: a skill invocation is a single Claude Code turn pro
 /plugin install product-leadership-skills@product-leadership-skills
 ```
 
-Full install/verify/update/uninstall steps: [INSTALLATION.md](INSTALLATION.md).
+Full install/verify/update/uninstall steps: [INSTALLATION.md](INSTALLATION.md). See a full worked example: [examples/demo-chain/README.md](examples/demo-chain/README.md).
 
 ## Repository layout
 
@@ -115,7 +127,7 @@ INSTALLATION.md               plugin install/verify/update steps
 skills/                       the installable plugin — one folder per skill
   <skill-name>/SKILL.md         the skill itself
   <skill-name>/evals/           YAML eval cases (all 9 skills)
-  <skill-name>/examples/        golden strong/weak pair (2 of 9 skills)
+  <skill-name>/examples/        golden strong/weak pair (2 of 24 skills)
   competencies.yaml              machine-readable skill -> competency map
   CONTRIBUTING.md                 skill contract, sourcing procedure, folder rules
 docs/
@@ -133,21 +145,21 @@ Strategy_thinking_storytelling/   competency deep-dive: strategy & storytelling
 ## Limitations
 
 - **Vision doc is a placeholder skeleton.** `docs/vision/product-leadership-skills-vision.md` has several sections marked TODO (positioning statement, human judgment boundaries, decision-brief template) pending a source document that wasn't available when it was drafted. These are deliberately left blank rather than filled in with invented content — see `skills/CONTRIBUTING.md`.
-- **Wave 1 skill expansion is 2 of 17 done.** `executive-update` and `decision-log` have shipped; opportunity framing, decision support (write-decision-brief, compare-options, prepare-prioritization), analytics (metric-definition, experiment-analysis), and the entire "AI-native product workflows" group (context-audit, agent-readiness-review, AI-feature-risk-review, eval-plan, human-in-the-loop-design) are scoped but not built. Full backlog: [docs/skills-gap-audit.md](docs/skills-gap-audit.md), tracked plan: `docs/superpowers/plans/2026-08-23-product-leadership-skills-expansion.md`.
+- **`docs/skills-gap-audit.md`'s per-skill status table is not yet refreshed.** All 17 Wave 1 skills below have since shipped, but that table (dated 2026-08-24) still marks each one ❌ "Wave 1 backlog" — the full, current catalog is [skills/README.md](skills/README.md); refreshing the audit table itself is tracked, not yet done.
 - **Worked demo chain covers one path only.** [examples/demo-chain/](examples/demo-chain/README.md) shows one skill's real output feeding the next end to end (transcripts through an alignment brief), but only for that single chain — most other skill-to-skill handoffs are still documented, not demonstrated.
 - **Eval cases aren't automated.** They're a reviewable specification of expected behavior (`skill / case / expected`), not a CI-gated test suite run against a live model.
-- **Golden examples exist for 2 of 9 skills.** The rest rely on evals and the SKILL.md's own guidance alone.
+- **Golden examples exist for 2 of 24 skills.** The rest rely on evals and the SKILL.md's own guidance alone.
 - **No versioned changelog yet.** `.claude-plugin/plugin.json` is at `1.0.0`; a `CHANGELOG.md` and version bump are planned once the Wave 1 expansion lands (see Roadmap), not before, so it reflects a real milestone rather than incremental noise.
 
 ## Roadmap
 
-### Finish the Wave 1 skill expansion
+### Refresh `docs/skills-gap-audit.md`'s per-skill status table
 
-Why: 15 of 17 scoped skills — including the entire "AI-native product workflows" group, which is this repo's most differentiated skill category — aren't built yet. Detail: [docs/skills-gap-audit.md](docs/skills-gap-audit.md).
+Why: all 17 Wave 1 skills — including the entire "AI-native product workflows" group, this repo's most differentiated skill category — have shipped, but the audit table itself still shows each one as backlog. Detail: [docs/skills-gap-audit.md](docs/skills-gap-audit.md).
 
-### Worked demo chain
+### Skills beyond Wave 1
 
-Why: right now every skill's example lives in isolation. Showing one skill's output feeding the next is what actually proves "workflows," not just "skills."
+Why: the vision doc names further skill groups (competitor analysis, JTBD synthesis, launch readiness, funnel/retention analysis, PM coaching, org review, and more) not scoped into Wave 1. Full backlog with reasoning: [docs/skills-gap-audit.md](docs/skills-gap-audit.md)'s "Backlog — not yet built" section.
 
 ### CHANGELOG.md and a version bump past 1.0.0
 
