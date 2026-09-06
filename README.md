@@ -149,7 +149,6 @@ Strategy_thinking_storytelling/   competency deep-dive: strategy & storytelling
 - **Worked demo chain covers one path only.** [examples/demo-chain/](examples/demo-chain/README.md) shows one skill's real output feeding the next end to end (transcripts through an alignment brief), but only for that single chain — most other skill-to-skill handoffs are still documented, not demonstrated.
 - **Eval cases aren't automated.** They're a reviewable specification of expected behavior (`skill / case / expected`), not a CI-gated test suite run against a live model.
 - **Golden examples exist for 2 of 24 skills.** The rest rely on evals and the SKILL.md's own guidance alone.
-- **No versioned changelog yet.** `.claude-plugin/plugin.json` is at `1.0.0`; a `CHANGELOG.md` and version bump are planned once the Wave 1 expansion lands (see Roadmap), not before, so it reflects a real milestone rather than incremental noise.
 
 ## Roadmap
 
@@ -161,11 +160,7 @@ Why: all 17 Wave 1 skills — including the entire "AI-native product workflows"
 
 Why: the vision doc names further skill groups (competitor analysis, JTBD synthesis, launch readiness, funnel/retention analysis, PM coaching, org review, and more) not scoped into Wave 1. Full backlog with reasoning: [docs/skills-gap-audit.md](docs/skills-gap-audit.md)'s "Backlog — not yet built" section.
 
-### CHANGELOG.md and a version bump past 1.0.0
-
-Why: the plugin manifest hasn't moved since the initial 7-skill release; a real changelog entry lands once Wave 1 skills ship, not before.
-
-Tracked in full: `docs/superpowers/plans/2026-08-23-product-leadership-skills-expansion.md`.
+Tracked in full: `docs/superpowers/plans/2026-08-23-product-leadership-skills-expansion.md`. See [CHANGELOG.md](CHANGELOG.md) for what's shipped so far.
 
 ## Product decisions
 
