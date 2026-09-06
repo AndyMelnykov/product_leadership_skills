@@ -101,7 +101,7 @@ Skills never call an external API, write to a system, or execute an action — t
 
 - **Eval coverage:** 24 of 24 shipped skills have at least one YAML eval case in `skills/<name>/evals/`, each testing a specific failure mode (fabricated evidence, silently-resolved ambiguity, skipped-but-unflagged missing evidence).
 - **Golden examples:** 2 of 24 skills (`synthesize-research`, `write-feature-spec`) ship a strong/weak example pair in `skills/<name>/examples/`.
-- **Contract coverage:** a full per-skill table (Purpose / Trigger / Inputs / Missing-input behavior / Process / Constraints / Output / Review / Evaluation) is tracked in [docs/skills-gap-audit.md](docs/skills-gap-audit.md) — that snapshot is dated 2026-08-24; eval coverage has reached 9/9 since, the rest of the table still reflects that date.
+- **Contract coverage:** a full per-skill table (Purpose / Trigger / Inputs / Missing-input behavior / Process / Constraints / Output / Review / Evaluation) is tracked in [docs/skills-gap-audit.md](docs/skills-gap-audit.md) — that snapshot is dated 2026-08-24 and only covers the original 7 skills; eval coverage has since reached 24/24, but the audit table itself hasn't been extended to the 17 skills that shipped after it was written.
 - There is no automated runner executing eval cases against a live model yet — see Limitations.
 
 ## Observability
@@ -126,7 +126,7 @@ INSTALLATION.md               plugin install/verify/update steps
 .claude-plugin/               plugin.json + marketplace.json manifests
 skills/                       the installable plugin — one folder per skill
   <skill-name>/SKILL.md         the skill itself
-  <skill-name>/evals/           YAML eval cases (all 9 skills)
+  <skill-name>/evals/           YAML eval cases (all 24 skills)
   <skill-name>/examples/        golden strong/weak pair (2 of 24 skills)
   competencies.yaml              machine-readable skill -> competency map
   CONTRIBUTING.md                 skill contract, sourcing procedure, folder rules
