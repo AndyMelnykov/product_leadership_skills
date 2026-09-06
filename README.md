@@ -145,7 +145,7 @@ Strategy_thinking_storytelling/   competency deep-dive: strategy & storytelling
 ## Limitations
 
 - **Vision doc is a placeholder skeleton.** `docs/vision/product-leadership-skills-vision.md` has several sections marked TODO (positioning statement, human judgment boundaries, decision-brief template) pending a source document that wasn't available when it was drafted. These are deliberately left blank rather than filled in with invented content — see `skills/CONTRIBUTING.md`.
-- **`docs/skills-gap-audit.md`'s per-skill status table is not yet refreshed.** All 17 Wave 1 skills below have since shipped, but that table (dated 2026-08-24) still marks each one ❌ "Wave 1 backlog" — the full, current catalog is [skills/README.md](skills/README.md); refreshing the audit table itself is tracked, not yet done.
+- **`docs/skills-gap-audit.md`'s per-skill status table is not yet refreshed.** All 17 Wave 1 skills have since shipped, but that table (dated 2026-08-24) still marks each one ❌ "Wave 1 backlog" — the full, current catalog is [skills/README.md](skills/README.md); refreshing the audit table itself is tracked, not yet done.
 - **Worked demo chain covers one path only.** [examples/demo-chain/](examples/demo-chain/README.md) shows one skill's real output feeding the next end to end (transcripts through an alignment brief), but only for that single chain — most other skill-to-skill handoffs are still documented, not demonstrated.
 - **Eval cases aren't automated.** They're a reviewable specification of expected behavior (`skill / case / expected`), not a CI-gated test suite run against a live model.
 - **Golden examples exist for 2 of 24 skills.** The rest rely on evals and the SKILL.md's own guidance alone.
